@@ -292,34 +292,154 @@ window.BELLOS_LORE = {
     {
       "session": 1,
       "date": "Day 1",
-      "title": "Whispers of the Schism",
-      "summary": "The chronicle opens. Word on the steppe holds that the sacred sites lie disturbed, the omens turn dark, and a nameless terror preys upon clan and caravan alike.",
+      "title": "Bloodshed in Felsirtstead",
+      "summary": "The chronicle opens. The Greymark Horde and the Dominion balance on a knife's edge, and a terror called Bloodwind preys upon clan and caravan alike looking for relics.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 1,
+      "date": "Day 1",
+      "title": "The Augustus Stain",
+      "summary": "Theodore proclaims his father, Erath Augustus, to be an innocent man! He wishes to restore the reputation of his family, in spite of his Erath's great fraud in the Dominion.",
+      "discoveredBy": "Theodore Augustus",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 1,
+      "date": "Day 1",
+      "title": "The Rip in the Sky",
+      "summary": "Tibbin Titterspat, a god-like magical gnome, mentions he has resurfaced due to a crack in the sky. He plays horrific tricks on you and senses great power within Ulrich.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 2,
+      "date": "Day 2",
+      "title": "Whispers in the Barrow",
+      "summary": "Accepting Councillor Velddra Ghrond of the Dominion's quest, you go to Thorgrim Windcaller's burial mound and destroy the relics there.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 2,
+      "date": "Day 2",
+      "title": "Banishment of the Unifier",
+      "summary": "In the burial mound, you uncover that Thorgrim was a legendary ancient champion who united the disparate Greymark clans under the Horde. His means were sacrilegious and he was sent to Urzul-Mokh by The Nine - the most powerful shamans of the time, who died shortly after.",
+      "discoveredBy": "Ulrich Boulder-Axe",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 3,
+      "date": "Day 3",
+      "title": "The Kazgur Stirs",
+      "summary": "Bloodwind's excavations awaken a great beast of the sand. With Orai Kashtamar's help, you slay the Kazgur Worm, and Mors sends it's head back to the House Black estate in the Kingdom of Midwel.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 3,
+      "date": "Day 3",
+      "title": "Sigils in the Sand",
+      "summary": "Kashtamar scouts find a huge broken circle in the sand on their way to you - the symbol that Bloodwind's skin is tattooed with. It contrasts with the full circle symbol of the Horde.",
+      "discoveredBy": "Clan Kashtamar",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 3,
+      "date": "Day 3",
+      "title": "A Thread of Peace",
+      "summary": "You arrive in Fort Odvish where Horde and Dominion folk alike share walls in new comfort, on the borderlands of the Dominion - championed by Orai.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 4,
+      "date": "Day 4",
+      "title": "The Friar's Final Blessing",
+      "summary": "Friar Marv Ichtenbjorg of the Esirianfan Church is curious about magic wielders. He is revealed to be... a deviant, and he films a biased view of his lynching for the Church with his scyring eye. Theodore and Baldrick remain committed to the Church.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 4,
+      "date": "Day 4",
+      "title": "The Circus & The Sword",
+      "summary": "A travelling circus and an unusual merchant arrive, bringing exotic items and unveiling Shamecrusher - the cursed sword.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 4,
+      "date": "Day 4",
+      "title": "Mockery of Fort Odvish",
+      "summary": "Altered Dominion guard patrols, shady clansmen, chaos, infighting. Only crudely painted banners bearing Bloodwind's symbol remain, with Orai Kashtamar nowhere to be seen, but he doesn't leave symbols.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 5,
+      "date": "Day 4",
+      "title": "The Crown of Vermin Vanquished",
+      "summary": "Tibbin Titterspat thinks Lucien looks cool, teleports him to Fort Odvish and sends him and Grinzak on a quest to slay The Rat King of the Feywild.",
+      "discoveredBy": "Grinzak the Lesser & Lucien Vex",
+      "nation": ""
+    },
+    {
+      "session": 6,
+      "date": "Day 4",
+      "title": "The Mystery of Vassian Korr",
+      "summary": "Grinzak receives a letter concerning a man called Vassian Korr.",
+      "discoveredBy": "Grinzak the Lesser",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 6,
+      "date": "Day 4",
+      "title": "Too Tidy Tents",
+      "summary": "Hobgoblin mercenaries hired to kill any trackers of Orai attack you. With T'Challa as the storm closed in, you find that Orai had her memory wiped, as well as armour from the Dominion, Kul coin, and Horde furs in a camp with Bloodwind banners.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_dominion"
+    },
+    {
+      "session": 7,
+      "date": "Day 4",
+      "title": "The Return of the Windcaller",
+      "summary": "You ride with a Kashtamar party to a burial site. Tagra, the Kashtamar shaman, senses a great power in Ulrich. The site contains the ancient Dagger of Severance - originally used to cut the spiritual ties of tieflings. Lucien's patron shies away but he refuses to let them go. Bloodwind returns alone. He acquires the dagger, killing all but Druvash Kashtamar in doing so, and sending Mors and Lucien briefly to Urzul-Mokh.",
       "discoveredBy": "The Party",
       "nation": "greymark_horde"
     },
     {
-      "session": 2,
-      "date": "Day 9",
-      "title": "The Price of the Gift",
-      "summary": "Those born with the arcane spark are given over to the Esirianfan Church to be honed, disciplined, and turned to the service of Esirianfe and empire. To wield magic within Lefrantha is to be both blessed and claimed; the gift is never wholly one's own.",
-      "discoveredBy": "Theodore",
-      "nation": "lefrantha"
+      "session": 7,
+      "date": "Day 4",
+      "title": "Cursed by Magic, Cursed by Man",
+      "summary": "In Urzul-Mokh, Thorgrim tells Mors that he had a partner who brought his physical form - Bloodwind - back, but this partner betrayed him. The Dagger of Severance is the only thing that could send his physical form back to hell. He aims to destroy it to escape death and his old partner.",
+      "discoveredBy": "Mors Harald-Otto of House Black",
+      "nation": ""
     },
     {
-      "session": 3,
-      "date": "Day 23",
-      "title": "A Relic Out of a Dead Culture",
-      "summary": "En is the one place where a buyer with enough coin can still turn up an artifact nobody can quite explain. A city that buys and sells artifacts it does not understand is, sooner or later, going to sell the wrong one.",
+      "session": 8,
+      "date": "Day 5",
+      "title": "Gathering of the Clans",
+      "summary": "With Druvash and T'Challa, you track Orai to the Great Shrine, the site of the Great Rotation - where the clans gather to race around hordelands once per decade, with the winning clan gaining great honour. You meet ten of eleven horde clans and engage with their traditions. Theodore and Lucien agree to race under the new clan Augustus, with the sigil of a dragon.",
       "discoveredBy": "The Party",
-      "nation": "kul"
+      "nation": "greymark_horde"
     },
     {
-      "session": 4,
-      "date": "Day 31",
-      "title": "The Word Spreads",
-      "summary": "The Word of Clayard, which teaches that no one is born to rule, has put down deep roots in Midwel. It has been spreading among the common folk for generations, in spite of top-down anti-religious enforcement.",
-      "discoveredBy": "Theodore",
-      "nation": "midwel"
-    }
+      "session": 8,
+      "date": "Day 5",
+      "title": "One Man & the Future of Greymark",
+      "summary": "Ulrich warns a hollow Orai, ahead of her evening clan speech at the Story Circle, that Bloodwind kidnapped her and slayed her clan members. Ulrich is told to go to the arena at night.",
+      "discoveredBy": "Ulrich Boulder-Axe",
+      "nation": "greymark_horde"
+    },
+    {
+      "session": 8,
+      "date": "Day 5",
+      "title": "The Rebirth of Theodore & The Death of Augustus",
+      "summary": "In the Hall of the Windcaller, Torvahn Jarakhi presented Theodore Augustus with a rogue religious leaflet found in a prophetic duststorm. Its teachings directly contradict the Esirianfan Church doctrines that Erath had raised him on. Reading the text, Theodore fiercely branded the Church - 'HERESY!'. This word triggered his Lefranthan cane, transforming it into a majestic rapier. In a shattering moment of defiance, Theodore renounced his faith, cast aside his noble Augustus family name, and was crowned Archpriest Theodore Jarakhi. With his defection, Lucien is left as the sole racing representative of Clan Augustus.",
+      "discoveredBy": "Archpriest Theodore Jarakhi",
+      "nation": "greymark_horde"
+    },
   ],
 };
