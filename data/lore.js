@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BELLOS — CAMPAIGN LORE DATA
+   BELLOS - CAMPAIGN LORE DATA
    --------------------------------------------------------------------------
    This file is the single source of truth for every word of lore on the
    site. Edit text here; the layout code in /js/main.js never needs to be
@@ -10,16 +10,16 @@
    browsers block fetch() of .json files).
 
    Structure:
-     site      — global titles used in the chrome of the site.
-     tabOrder  — the chapter tabs shown on every nation page, in order.
-     nations   — one entry per nation. "tabs" maps each chapter to an
+     site      - global titles used in the chrome of the site.
+     tabOrder  - the chapter tabs shown on every nation page, in order.
+     nations   - one entry per nation. "tabs" maps each chapter to an
                  array of paragraphs (plain text; the first letter of the
                  first paragraph is automatically rendered as a drop cap).
-     timeline  — chronological entries for the Timeline view, oldest
+     timeline  - chronological entries for the Timeline view, oldest
                  first. "body" is an array of paragraphs, "image" is the
                  media shown beside the entry, and the optional "nation"
                  links the entry to a nation page.
-     campaignTimeline — the session-by-session Chronicle feed. Append a
+     campaignTimeline - the session-by-session Chronicle feed. Append a
                  new object after each game session (oldest first; the
                  site shows the newest at the top of the feed). Fields:
                  "session" (number), "date" (in-game date, free text),

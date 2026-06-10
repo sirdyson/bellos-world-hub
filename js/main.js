@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BELLOS — THE SCHISM CAMPAIGN
+   BELLOS - THE SCHISM CAMPAIGN
    SPA state, hash routing & animated view flows
    --------------------------------------------------------------------------
    All content is read from window.BELLOS_LORE (see /data/lore.js).
@@ -390,7 +390,7 @@
   }
 
   /* ------------------------------------------------------------------------
-     Hero parallax — a slow downward drift as the page scrolls away.
+     Hero parallax - a slow downward drift as the page scrolls away.
      ------------------------------------------------------------------------ */
   function bindParallax() {
     if (REDUCED_MOTION) return;
