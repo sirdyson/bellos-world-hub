@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD - Bellos - The Schism Campaign</title>
+    <meta name="description" content="Bellos - The Schism Campaign. An atlas of the nations and chronicle of the history of Bellos.">
+    <meta name="theme-color" content="#060606">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header>
+        <nav class="site-nav" aria-label="Primary">
+            <a class="brand" href="#/nations">Bellos <small>The Schism Campaign</small></a>
+            <div class="nav-links">
+                <a href="#/nations" data-nav="nations">Nations</a>
+                <a href="#/timeline" data-nav="timeline">Timeline</a>
+                <a href="#/chronicle" data-nav="chronicle">Chronicle</a>
+                <a href="#/tales" data-nav="tales">Theodore's Tales</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="app">
+
+        <!-- View: index of nations. All views boot hidden; the router reveals one. -->
+        <section id="view-nations" class="view" hidden aria-labelledby="nations-title">
+            <header class="view-header">
+                <p class="kicker">The World of Bellos</p>
+                <h1 class="view-title" id="nations-title">Nations</h1>
+                <div class="rule" aria-hidden="true"></div>
+            </header>
+            <div class="cards-grid" id="cards-grid"></div>
+        </section>
+
+        <!-- View: a single nation -->
+        <section id="view-nation" class="view" hidden>
+            <article class="nation-article">
+                <header class="nation-hero">
+                    <img id="nation-hero-img" alt="" aria-hidden="true">
+                    <h1 id="nation-title"></h1>
+                </header>
+
+                <div class="divider-full divider-top" aria-hidden="true"></div>
+
+                <nav class="sub-nav" id="nation-tabs" aria-label="Nation chapters"></nav>
+
+                <div class="main-content" id="nation-content"></div>
+
+                <div class="divider-full divider-bottom" aria-hidden="true"></div>
+            </article>
+        </section>
+
+        <!-- View: the chronicle -->
+        <section id="view-timeline" class="view" hidden aria-labelledby="timeline-title">
+            <header class="view-header">
+                <p class="kicker">Chronicle of Bellos</p>
+                <h1 class="view-title" id="timeline-title">Timeline</h1>
+                <div class="rule" aria-hidden="true"></div>
+            </header>
+
+            <div class="timeline-scroller" aria-label="Eras of history">
+                <div class="timeline-rail" id="timeline-rail"></div>
+            </div>
+
+            <div class="timeline-detail" id="timeline-detail"></div>
+        </section>
+
+        <!-- View: campaign chronicle feed -->
+        <section id="view-chronicle" class="view" hidden aria-labelledby="chronicle-title">
+            <header class="view-header">
+                <p class="kicker">Session by Session</p>
+                <h1 class="view-title" id="chronicle-title">Campaign Chronicle</h1>
+                <div class="rule" aria-hidden="true"></div>
+            </header>
+
+            <ol class="chron-feed" id="chronicle-feed" aria-label="Discoveries, newest first"></ol>
+        </section>
+
+        <!-- View: Theodore's Tales (placeholder) -->
+        <section id="view-tales" class="view" hidden aria-labelledby="tales-title">
+            <header class="view-header">
+                <p class="kicker">Stories from the Road</p>
+                <h1 class="view-title" id="tales-title">Theodore's Tales</h1>
+                <div class="rule" aria-hidden="true"></div>
+            </header>
+
+            <article class="tales-placeholder">
+                <span class="tales-ornament" aria-hidden="true"></span>
+                <p class="tales-line">The tales are still being written.</p>
+                <p class="tales-sub">Theodore's accounts will be recorded here as the campaign unfolds.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">Bellos &mdash; The Schism Campaign</footer>
+
+    <script src="data/lore.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
