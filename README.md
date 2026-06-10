@@ -2,7 +2,8 @@
 
 A static lore site for a D&D campaign set in the world of Bellos, styled 
 as a cinematic dark-editorial "universe hub". Pure HTML/CSS/vanilla JS -
-no build step - so it deploys directly to GitHub Pages. 
+no build step - so it deploys directly to GitHub Pages:
+https://sirdyson.github.io/bellos-world-hub/
 
 ## Structure
 
