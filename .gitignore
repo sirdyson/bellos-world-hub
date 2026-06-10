@@ -1,0 +1,6 @@
+# Windows / OneDrive noise
+Thumbs.db
+desktop.ini
+
+# local test harnesses
+__test_*.html
