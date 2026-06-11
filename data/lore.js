@@ -205,8 +205,8 @@ window.BELLOS_LORE = {
       "nation": "lefrantha",
       "image": "assets/img/lefrantha.jpg",
       "body": [
-        "The Empire was forged millennia ago by the Thelelthan mage-kings, an elvish aristocracy who bound the warring cultures of the north and east beneath their banner through the overwhelming superiority of their magic.",
-        "From that conquest rose a golden age of wonders: river-spanning cities, towering constructs, and works of sorcery never since equalled."
+        "Following a great cataclysm, the Lefranthan Empire was forged by the Thelelthan mage-kings, an elvish aristocracy who bound the warring cultures of the north and east beneath their banner through the overwhelming superiority of their magic.",
+        "From thousands of years of conquest, the Empire reached its greatest territorial extent and in it rose a golden age of wonders and faith: river-spanning cities, towering constructs, cathedrals, and arcane machinations never since recreated."
       ]
     },
     {
@@ -216,8 +216,8 @@ window.BELLOS_LORE = {
       "nation": "grug",
       "image": "assets/img/grug.jpg",
       "body": [
-        "Six centuries ago, by their telling, Ar-Nard revealed himself to the orcs of the southern coasts and showed them fire, in the brand and the forge, proof that what is to be shaped must first be made to suffer.",
-        "The Church that rose from that revelation conquered, converted, and raised a principality where the priesthood is the state and the altar is never far from the lash."
+        "Ar-Nard the Divine Ancient revealed himself to the Khuld orcs of the southern coasts and showed them fire, in the brand and the forge. It claimed the Khuld must know suffering.",
+        "The Gho-Ludh Church that rose from that revelation conquered, converted, and raised a Khuld theocracy led by a devout priesthood."
       ]
     },
     {
@@ -227,8 +227,42 @@ window.BELLOS_LORE = {
       "nation": "nog",
       "image": "assets/img/nog.jpg",
       "body": [
-        "The kingdom of Nog was hammered together by Ulzugnud the Unyielding, a conqueror who won an empire by sea and then turned on his own people's past, declaring the old ways a shame to be burned out rather than honoured.",
-        "From that purge came Vrarudism, the creed that still drives them: a hard faith teaching that comfort is rot, that hardship is the only honest teacher, and that destruction is not the end of a thing but the price of its rebirth."
+        "The Kingdom of Nog was birthed by Ulzugnud the Unyielding, a conqueror who won an empire by sea, and then turned against the Khuld's past, declaring the Gho-Ludh Church a weakness to be forgotten.",
+        "From that purge came Vrarudism, the creed that still drives them, and the nation was cut from the Khuld theocracy - leaving it as the Principality of Grug. Vrarudism preaches against complacency, and that hardship is the only honest teacher. Ulzugnud used this philosophy to conquer distant coastal lands in the Lefranthan Empire, and the continent of Greymark."
+      ]
+    },
+    {
+      "id": "greymark-unification",
+      "era": "Four Centuries Ago",
+      "title": "The Unification of Greymark",
+      "nation": "greymark_horde",
+      "image": "assets/img/horde.jpg",
+      "body": [
+        "Amidst their Nogruk conquest and the voracious beasts within, the clans of Greymark united into a horde under Thorgrim Windcaller. Thorgrim reached a stalemate with the Nogruk after magnificent victories, assisted by relics he maladapted from raiding the burial mounds of the ancient Greymark ancestors.",
+        "The Nine, the most powerful council of Greymark shamans, condemned his sacrilegious means and banished him to Urzul-Mokh - taking this secret to their graves, reciting that Thorgrim Windcaller fell in battle. However, one of The Nine, hid the truth deep in Thorgrim's burial mound."
+      ]
+    },
+    {
+      "id": "clayards-rise",
+      "era": "Three Centuries Ago",
+      "title": "The Blonde Revolution",
+      "nation": "snowfals",
+      "image": "assets/img/snowfals.jpg",
+      "body": [
+        "For millennia, Snowfals was a subject land of the Lefranthan Empire. Then came Clayard the Blonde, whose single command, to rise, converted grievance into action, and action into liberation.",
+        "Her call to rise, literally became the Word of Clayard, the new Snowfals religion that swiftly replaced folk belief in Mostal, Lord of Balance. Clayard won the war and founded the Most Serene Republic of Snowfals, and with her work finished, she simply vanished, leaving behind both a nation and a faith.",
+        "Its people remember the price of that freedom in every shrine and on every weathered wall."
+      ]
+    },
+    {
+      "id": "crossing-of-the-mountains",
+      "era": "Three Centuries Ago",
+      "title": "The Crossing of the Mountains",
+      "nation": "midwel",
+      "image": "assets/img/midwel.jpg",
+      "body": [
+        "The realm of Midwel was raised centuries ago by refugees who crossed the mountains to escape the Lefranthan Empire, weakened after the independence of Snowfals. Its refugees, undisturbed in their geography, used their new peace and shelter to consolidate wealth. The greatest contributors formed their noble houses and behind them Midwel built internal stability, in a kingdom protected by fort and mountain.",
+        "Revolutionary ideas from the new regional power of Snowfals threatened the noble houses, but they swiftly put down such ideas, condemning religions that became too powerful, and turned their efforts to science."
       ]
     },
     {
@@ -238,52 +272,30 @@ window.BELLOS_LORE = {
       "nation": "kul",
       "image": "assets/img/kul.jpg",
       "body": [
-        "Kul began as a conquered port, thrown up by the southern orcs of Grug and Nog, before their division, to ship home what they had stolen from the Greymark steppe.",
-        "When a greater power came for it, its rulers did not fight to the last man; they knelt, changed gods, changed masters, and kept their warehouses. The peoples it abandoned have never forgiven the turn, and Kul has never lost a night's sleep over it."
-      ]
-    },
-    {
-      "id": "crossing-of-the-mountains",
-      "era": "Centuries Ago",
-      "title": "The Crossing of the Mountains",
-      "nation": "midwel",
-      "image": "assets/img/midwel.jpg",
-      "body": [
-        "The realm of Midwel was raised centuries ago by refugees who crossed the mountains to escape the Lefranthan Empire, and its mountainous prison has shaped it ever since.",
-        "The passes are few and easily held, and behind them Midwel built stability. Its great families have kept their lands for generations, its crown more often than not passes without bloodshed, and its capital stands on the coast as a fortress first and a city second."
-      ]
-    },
-    {
-      "id": "rising-of-clayard",
-      "era": "Three Centuries Ago",
-      "title": "The Rising of Clayard the Blonde",
-      "nation": "snowfals",
-      "image": "assets/img/snowfals.jpg",
-      "body": [
-        "Three centuries ago these were subject lands of the Lefranthan Empire. Then came Clayard the Blonde, whose single command, to rise, turned scattered grievance into revolution and revolution into a free people.",
-        "Clayard won the war and then, her work finished, simply vanished, leaving behind both a nation and a faith. Its people remember the price of that freedom in every shrine and on every weathered wall."
+        "Kul began as a Greymark port, thrown up by the Nogruk, to ship home what they had stolen from the steppe.",
+        "When the Horde came for it, the city's rulers bent the knee, and kept their warehouses, without blood drawn. The Nogruk it abandoned and impoverished have never forgiven the betrayal."
       ]
     },
     {
       "id": "schism-of-the-greymark",
       "era": "A Generation Ago",
-      "title": "The Schism of the Greymark",
+      "title": "The Schism of Greymark",
       "nation": "greymark_dominion",
-      "image": "assets/img/horde.jpg",
+      "image": "assets/img/dominion.jpg",
       "body": [
-        "A single generation ago the Horde tore itself in two, and it has bled against its own breakaway kin ever since. The Dominion was born when a faction of the Horde chose to stop riding - they would keep the ancestors, they declared, but honour them in halls of stone rather than on the move.",
+        "A single generation ago the Horde tore itself in two, and they have only now established a fragile peace. The Dominion was born when a faction of the Horde chose to stop riding - they would keep the ancestors, they declared, but honour them in halls of stone rather than on mountback.",
         "It was heresy to those they left behind, and the two peoples have battled over the choice ever since."
       ]
     },
     {
       "id": "the-present-age",
       "era": "The Present Day",
-      "title": "An Age of Omens",
-      "nation": "greymark_horde",
+      "title": "A Brittle Age",
+      "nation": "greymark_dominion",
       "image": "assets/img/dominion.jpg",
       "body": [
-        "Succession crises gnaw at the imperial court as Autokrator Malakor grows old. Subject peoples grow restless along the shrinking frontier, and whispers of heresy spread through province and parish faster than the Inquisition can burn them out.",
-        "On the steppe, the sacred sites lie disturbed, the omens turn dark, and a nameless terror preys upon clan and caravan alike - and among the riders, a fear grows that the ancestors themselves have begun to look away."
+        "Succession crises gnaw at the Lefranthan imperial court as Autokrator Malakor grows old. Subject peoples grow restless along its shrinking frontier, and whispers of heresy spread through province and parish faster than the Inquisition can burn them out.",
+        "On the Greymark steppe, tension builds between the new and old nation, and a new terror, Bloodwind, preys upon clan and caravan alike. New faiths rise, empires crumble, arcane events occur more frequently - the world is unsure who will survive the change."
       ]
     }
   ],
@@ -381,7 +393,7 @@ window.BELLOS_LORE = {
       "session": 5,
       "date": "Day 4",
       "title": "The Crown of Vermin Vanquished",
-      "summary": "Tibbin Titterspat thinks Lucien looks cool, teleports him to Fort Odvish and sends him and Grinzak on a quest to slay The Rat King of the Feywild.",
+      "summary": "Tibbin Titterspat thinks Lucien looks cool, teleports him to Fort Odvish and sends him and Grinzak on a quest to slay the Rat King of the Feywild.",
       "discoveredBy": "Grinzak the Lesser & Lucien Vex",
       "nation": ""
     },
