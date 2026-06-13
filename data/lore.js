@@ -48,7 +48,13 @@ window.BELLOS_LORE = {
           "But the divine order is no longer what it was. Succession crises gnaw at the imperial court as Autokrator Malakor grows old. Subject peoples grow restless along the shrinking frontier, and whispers of heresy spread through province and parish faster than the Inquisition can burn them out. For all the enemies massed beyond its walls, many within the Empire have come to fear a darker truth - that its ruin, when it comes, will rise not from the lands it failed to conquer, but from the rot spreading quietly at its heart."
         ],
         "history": ["Lefrantha is a powerful empire..."],
-        "environments": ["Lefrantha is a powerful empire..."],
+        "environments": [
+          "The heartland of Lefrantha is comprised of broad, fertile river-plains and ancient forest, sprawling across the north and east of Bellos - the richest soil any people have ever claimed. This is the seat of empire, and every mile of it bears the empire's hand: well-maintained roads and bridges, fields worked for millennia, and ancient time-worn cities of pale marble. The basin and its rivers are the Empire's arteries, threading its plains to the cold northern sea, carrying grain, faith, and wealth from conquered territories toward the capital Yelona - its coast crowded with imperial galleys.",
+          "To the east, its plains surrender to deep forest and swamp, a vast and shadowed expanse where the imperial mandate thins with every kilometre beneath the canopy. Here dwell the Lotherkald, a riverine culture, now integrated within the Empire. Their rivers and wood were here long before the mage-kings came. The forests around here climb into snow-capped peaks, and somewhere among the ranges lie ruins and rumours of a whole civilisation buried beneath.",
+          "The Empire is walled at its south by a central spine of great mountains and hills, standing as a barrier against the steppe of Greymark and the orcish nations beyond, its few passes heavily fortified as gates to the heartland.",
+          "The distant southeast is heavily patrolled by imperial galleys fending off any opportunist Nogruk pirates and attack forces. In the flat, narrow chokepoints of the west, stand more fortified towns, paranoid of invasion.",
+          "Scattered in its heartland are the broken bones of the Empire's history: ashen ruins, mysterious ancient constructs, and arcane rifts that distort reality itself. The modern Lefranthans raised their glory atop these and learned to harness, not replicate, the power left behind by their ancestors. The arcane is what they prize more than gold, so that they can attain again the glory of the golden age."
+        ],
         "religions": ["Lefrantha is a powerful empire..."],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
@@ -68,7 +74,13 @@ window.BELLOS_LORE = {
           "However, the Horde of Greymark is divided. A single generation ago it tore itself in two, and the Horde has bled against its own breakaway kin ever since. Now the sacred sites lie disturbed, the omens turn dark, and a nameless terror preys upon clan and caravan alike - and among the riders, a fear grows that the ancestors themselves have begun to look away. For all the enemies that ring the steppe, the oldest dread of the Horde is constant, can it stay united as the world changes around it?"
         ],
         "history": ["Lefrantha is a powerful empire..."],
-        "environments": ["Lefrantha is a powerful empire..."],
+        "environments": [
+          "The Horde-controlled Greymark steppe is an ocean of grass, red soil and open sky, a vast rolling country in the south and centre-west of the world where the horizon runs unbroken and the wind never stops. It is a land that builds nothing it cannot carry. The Horde raises no cities and keeps no capital - a circuit of pastures, water, and sacred ground traversed by the clans in their seasons, the whole people forever in motion across it. To the settled nations, it looks like a barren waste, ripe for development. To the Horde it is the only honest country left.",
+          "Dust storms rise without warning to swallow the steppe, allowing the horde to vanish into the clouds to strike and scatter any invader before they can establish any control. The wind is said to carry the spirits of the dishonoured, and so the clans ride masked and veiled, warding against the spirits carried in the dust.",
+          "The steppe is a monument to the dead - dense with burial mounds containing extinct clans with their raid tokens and honours. The living ride over their ancestors under their eternal judgement. The Great Shrine, a huge working of stone and bone, is tended by the surrounding clans as the centre of gravity in their rotating world - to which the scattered peoples return once per decade to remember that they are one.",
+          "Mountains wall its edges against the nations of the north, their passes guarding lands that the Horde has never cared to take. To the Horde's east, the steppe meets the stone walls of the Dominion - the breakaway kin who chose to settle - along an invisible border of blood. The borderlands have, in some ways, became a country of their own, home to lawless raider camps who have abandoned tradition, neutral trading posts, and daring new settlements. These are threaded by the Red Moon Road, where Horde and Dominion pass and co-exist under an uneasy truce.",
+          "The south is densely forested and swampy, forming a natural border with the voracious nation of Grug. In a pocket of lagoons, resides the city-state of Kul, allowed to exist by the generosity of the Horde."
+        ],
         "religions": ["Lefrantha is a powerful empire..."],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
@@ -88,7 +100,12 @@ window.BELLOS_LORE = {
           "But a nation built so quickly, from so many mismatched pieces, does not hold easily. Its councils squabble while its merchant houses chase private fortunes; its lofty ideals run thick with opportunism, and more than one fortune in its boom-built capital was raised on a lie. Hemmed in by the Horde that names it traitor and the Lefranthan Empire that watches it with hungry patience, the Dominion's settler experiment may yet prove its undoing."
         ],
         "history": ["Lefrantha is a powerful empire..."],
-        "environments": ["Lefrantha is a powerful empire..."],
+        "environments": [
+          "The Dominion has been raised in a single generation on ground that has never before carried walls. Stone towns rise from its grass, fields fenced from old pasture, and roads cut where there were once trails. To the horde, it is a betrayal of hammer and timber. To their people, it is a hopeful future, hauled up out of the earth by the hands of those oppressed world-over.",
+          "At its heart, on the coast of a small inland sea, sprawls Phax. It is a disorganised jumpstart of a capital city that has grown fast with the opportunities it presents. The Dominon welcomes all peoples, so its towns and Phax's neighbourhoods, are a clamour of tongues and faiths under a new shelter: steppe-born settlers, refugess from orcish raids, Lotherkald who traded their hegemon for a new promise, and merchants, zealots, and chancers from every border hoping to capitalise on the early nation. It is governed, in theory, by councils and assemblies, but influence tends to drift towards the loudest merchant families.",
+          "Underneath the stone remains the old country, the same burial mounds dot its fields, and the same ancestors lie beneath the foundations of its halls - honoured instead in permanent shrines of wood and cloth. In the centre of Phax, is the Ironbark Standard, a symbol of their settlement.",
+          "The Dominion's curse is its position, sitting as a new buffer between two great powers that would prefer if it didn't exist. The Horde to the west see it as a traitor, and the Lefranthan Empire to the north who see it as tumultuous ground ripe for the taking. Its eastern frontier grows more dangerous with every year, thick with Nogruk raids and imperial eyes. Its western edge weeps with blood. The young nation made both rich and vulnerable by the openness that built it, survives on the narrow margin of being worth more to its neighbours alive than dead."
+        ],
         "religions": ["Lefrantha is a powerful empire..."],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
