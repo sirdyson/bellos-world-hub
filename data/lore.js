@@ -33,7 +33,7 @@ window.BELLOS_LORE = {
     "subtitle": "The Schism Campaign"
   },
 
-  "tabOrder": ["overview", "history", "environments", "religions", "life", "people", "champions"],
+  "tabOrder": ["overview", "environments", "religions", "life", "people", "champions"],
 
   "nations": {
     "lefrantha": {
