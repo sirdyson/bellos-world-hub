@@ -30,7 +30,7 @@ assigned to `window.BELLOS_LORE` is pure JSON:
 - **`campaignTimeline`** - the session-by-session Chronicle feed. After a
   game session, append one object (oldest first; the site shows newest at
   the top): `session` number, in-game `date` (free text), a punchy
-  `title`, a 2–3 sentence `summary`, `discoveredBy`, and an optional
+  `title`, a 2-3 sentence `summary`, `discoveredBy`, and an optional
   `nation` id that adds a linked tag plus that nation's artwork. Commit,
   push, done.
 - **`tabOrder`** - add or reorder chapter tabs globally here.

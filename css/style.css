@@ -504,6 +504,14 @@ a {
   padding-top: var(--nav-h);
 }
 
+/* centre the hero, tab bar and prose column on the page as one stack */
+.nation-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .nation-hero {
   position: relative;
   width: 100%;
@@ -568,7 +576,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px clamp(22px, 3.4vw, 40px);
+  /* generous row gap so the active underline never crashes into a wrapped row */
+  gap: 30px clamp(22px, 3.4vw, 40px);
   width: 100%;
   max-width: 880px;
   margin-bottom: 60px;
@@ -1247,7 +1256,7 @@ a {
   }
 
   .sub-nav {
-    gap: 14px 22px;
+    gap: 28px 20px;
   }
 
   .chron-feed {

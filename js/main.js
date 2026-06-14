@@ -279,7 +279,7 @@
       <aside class="timeline-media">
         <figure>
           <img src="${escapeHtml(event.image)}" alt="" loading="lazy">
-          <figcaption>Illustrative record &mdash; ${escapeHtml(event.era)}</figcaption>
+          <figcaption>From the Archives - ${escapeHtml(event.era)}</figcaption>
         </figure>
       </aside>`;
 
