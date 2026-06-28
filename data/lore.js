@@ -543,7 +543,7 @@ window.BELLOS_LORE = {
       "session": 9,
       "date": "Day 5",
       "title": "Where does your strength come from?",
-      "summary": "Ulrich seeks the arena. In the sparring grounds, he faces an Ingdeth warrior, who reveals they carry a great burden of shame to keep the clans united. In the arena, Ulrich meets Dravid Stormborn, an immense old monk who has walked the Great Rotation on foot for decades. Dravid asks Ulrich where his strength comes from, dismantling every answer with a flurry of blows, naming his pride, ambition, and Shamecrusher is hindrances to his strength. Ulrich names his friends as the source of his strength, throwing Shamecrusher to the ground, and destroying it. Shamecrusher absorbs his might as a final punishment - leaving Ulrich a thin and frail man.",
+      "summary": "Ulrich seeks the arena. In the sparring grounds, he faces an Ingdeth warrior, who reveals they carry a great burden of shame to keep the clans united. In the arena, Ulrich meets Dravid Stormborn, an immense old monk who has walked the Great Rotation on foot for decades. Dravid asks Ulrich where his strength comes from, dismantling every answer with a flurry of blows, naming his pride, ambition, and Shamecrusher as hindrances to his strength. Ulrich states his friends as the source of his strength, throws Shamecrusher to the ground, and destroys it. Shamecrusher absorbs his might as a final punishment - leaving Ulrich a thin and frail man.",
       "discoveredBy": "Ulrich Boulder-Axe",
       "nation": "greymark_horde"
     },
@@ -559,7 +559,7 @@ window.BELLOS_LORE = {
       "session": 9,
       "date": "Day 5",
       "title": "Brother...",
-      "summary": "Mors, Lucien, Ulrich, and Grinzak ride east to clear a gorge along the Great Rotation route of a Kazh-Varath - a great predator that kills with bioelectric discharge. The gorge presents various hazards. The beast restructures mid-fight and Mors feels his own blood respond. With his claws deep in the beast with his killing blow, its body tightens around his arm, its galvanic blood entering his wounds and meeting the elixir in his veins. The two beasts momentarily exist as one, and the Kazh-Varath names him 'Brother'. Mors' scars glow purple as he has a childhood vision, and his body is irrevocably changed - presenting new boons, but at what cost?",
+      "summary": "Mors, Lucien, Ulrich, and Grinzak ride east to clear a gorge along the Great Rotation route of a Kazh-Varath - a great predator that kills with bioelectric discharge. The beast restructures mid-fight and Mors feels his own blood respond. With his claws deep in the beast with his killing blow, its body tightens around his arm, its galvanic blood entering his wounds and meeting the elixir in his veins. The two beasts momentarily exist as one, and the Kazh-Varath names him 'Brother'. Mors' scars glow purple as he has a childhood vision, and his body is irrevocably changed - presenting new boons, but at what cost?",
       "discoveredBy": "Mors Harald-Otto of House Black",
       "nation": "greymark_horde"
     },
