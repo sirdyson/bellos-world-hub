@@ -531,5 +531,37 @@ window.BELLOS_LORE = {
       "discoveredBy": "Archpriest Theodore Jarakhi",
       "nation": "greymark_horde"
     },
+    {
+      "session": 9,
+      "date": "Day 5",
+      "title": "The Rallying of the Horde",
+      "summary": "Orai, stricken by grief, delivers her speech to the gathered clans by the green fire of the Great Shrine, naming Bloodwind as the enemy of the Horde. Following her speech, Torvhan Jarakhi honours the party and Orai, and poses the question: 'who grows fat and rich in their settlements to the east whilst we fight the enemy in our borders?'. The word 'DOMINION!' spreads through the gathering. Lucien has a conversation with his patron.",
+      "discoveredBy": "Grinzak the Lesser & Lucien Vex",
+      "nation": "greymark_horde"
+    },
+    {
+      "session": 9,
+      "date": "Day 5",
+      "title": "Where does your strength come from?",
+      "summary": "Ulrich seeks the arena. In the sparring grounds, he faces an Ingdeth warrior, who reveals they carry a great burden of shame to keep the clans united. In the arena, Ulrich meets Dravid Stormborn, an immense old monk who has walked the Great Rotation on foot for decades. Dravid asks Ulrich where his strength comes from, dismantling every answer with a flurry of blows, naming his pride, ambition, and Shamecrusher is hindrances to his strength. Ulrich names his friends as the source of his strength, throwing Shamecrusher to the ground, and destroying it. Shamecrusher absorbs his might as a final punishment - leaving Ulrich a thin and frail man.",
+      "discoveredBy": "Ulrich Boulder-Axe",
+      "nation": "greymark_horde"
+    },
+    {
+      "session": 9,
+      "date": "Day 5",
+      "title": "The Spider",
+      "summary": "Grinzak, following the Vassian Korr thread, stumbles over his web of lies and Torvhan seizes him, being placed in a makeshift prison with two other orcs - also merchants from Phax, with many lies to tell. Lucien breaks Grinzak free by setting Torvhan's shack alight, the two other orcs vanish into the fray, and the Jarakhi begin praying to the fire.",
+      "discoveredBy": "Grinzak the Lesser & Lucien Vex",
+      "nation": "greymark_horde"
+    },
+    {
+      "session": 9,
+      "date": "Day 5",
+      "title": "Brother...",
+      "summary": "Mors, Lucien, Ulrich, and Grinzak ride east to clear a gorge along the Great Rotation route of a Kazh-Varath - a great predator that kills with bioelectric discharge. The gorge presents various hazards. The beast restructures mid-fight and Mors feels his own blood respond. With his claws deep in the beast with his killing blow, its body tightens around his arm, its galvanic blood entering his wounds and meeting the elixir in his veins. The two beasts momentarily exist as one, and the Kazh-Varath names him 'Brother'. Mors' scars glow purple as he has a childhood vision, and his body is irrevocably changed - presenting new boons, but at what cost?",
+      "discoveredBy": "Mors Harald-Otto of House Black",
+      "nation": "greymark_horde"
+    },
   ],
 };
