@@ -74,7 +74,10 @@ window.BELLOS_LORE = {
           "Standing apart from every rank is the arcane-touched, whose place is the strangest the Empire keeps. The spark appears where it will - in a great house or a serf's hovel, in an Esirianfan cradle or a Lotherkald one - and wherever it appears, the Church comes for the child. To carry it is to be lifted clean out of one's birth, for good and ill at once: a few families weep with pride to see a child raised into the power of the faith, while many more weep simply to see them taken, honed, and claimed, never wholly their own again. A sewer rat with the gift may one day command armies a born lord could only envy; he will never again command himself. And beneath even the lowest free subject sit the owned and the broken, of whom the Empire does not speak.",
           "What binds the Esirianfans into a people is order. They are patient, proud, and devout by long habit, a folk who reckon a soul's worth by its lineage, its learning, and its orthodoxy, and who find in their marble cities and unbroken rites all the evidence they require that the world was made to be ruled by such as them. This certainty now frays at the edges of personalities, and the frontiers of the Empire."
         ],
-        "champions": ["Lefrantha is a powerful empire..."]
+        "champions": [
+          "Autokrator Malakor, the master of the First Throne, is the anchor keeping the Lefranthan Empire from fracturing. Born centuries ago as a disregarded third son, he forsook the luxuries of Yelona for the harsh mountains of Bil. When his father, Autokrator Janus, withered, Malakor did not wait for the Thelelthan aristocracy to crown his meek brothers; he marched his frontier battalions on the capital, purging his kin and opposing nobles. The zealots from the earlier incarnations of the Esirianfan Church pleaded with him at the steps of the Grand Cathedral, forcing a diarchy, with Malakor being granted the rule of man. Since then, he has sat the First Throne, architecting the bureaucracy of the state. Now an aged ruler encased in his castle, he leads the Empire pragmatically, his rule necessary to maintain internal peace.",
+          "Ignivar, the Red Pontifex, the sitter of the Second Throne, is the fanatical soul of the Lefranthan Empire. He rose through the inquisitorial gauntlet building his supremacy on the pyres of heretics and the establishment of a monopoly on the arcane. The Red Pontifex orchestrates the Empire's theocratic machinery, cloaked in crimson. He governs the Cindersynod and deploys his inquisitorial factions to drag unsanctioned mages from their beds, convinced that only the holy fire of Esiranfe can purge the rot gnawing at the Church's eternal mandate."
+        ]
       }
     },
 
@@ -166,7 +169,9 @@ window.BELLOS_LORE = {
         ],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
-        "champions": ["Lefrantha is a powerful empire..."]
+        "champions": [
+          "None yet known."
+        ]
       }
     },
 
@@ -194,7 +199,7 @@ window.BELLOS_LORE = {
         ],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
-        "champions": ["Lefrantha is a powerful empire..."]
+        "champions": ["None yet known."]
       }
     },
 
@@ -223,7 +228,9 @@ window.BELLOS_LORE = {
         ],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
-        "champions": ["Lefrantha is a powerful empire..."]
+        "champions": [
+          "None yet known."
+        ]
       }
     },
 
@@ -254,7 +261,9 @@ window.BELLOS_LORE = {
         ],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
-        "champions": ["Lefrantha is a powerful empire..."]
+        "champions": [
+          "None yet known."
+        ]
       }
     },
 
@@ -280,7 +289,9 @@ window.BELLOS_LORE = {
         ],
         "life": ["Lefrantha is a powerful empire..."],
         "people": ["Lefrantha is a powerful empire..."],
-        "champions": ["Lefrantha is a powerful empire..."]
+        "champions": [
+          "None yet known."
+        ]
       }
     }
   },
@@ -574,4 +585,707 @@ window.BELLOS_LORE = {
       "nation": "greymark_horde"
     },
   ],
+  "worldMap": {
+    "notes": "Node coords are normalised [u,v] at the CENTRE OF THE PLACE ICON on the map (the drawing above the name): u=x/width (0 = west edge), v=y/height (0 = north edge). To add a place: copy a marker and set id (unique slug), name, u, v, type (capital|city|town|village|ruin|landmark), nation (links to its nation page and tints the pin; omit for none), and an optional desc - a sentence or two shown in the detail card when the node is clicked.",
+    "base": {
+      "texture": "assets/img/map/base.jpg?v=7",
+      "height": "assets/img/map/height.png?v=7",
+      "aspect": 1.3333
+    },
+    "overlays": [
+      {
+        "id": "political",
+        "label": "Political",
+        "texture": null,
+        "blurb": "The drawn borders of Bellos as they stand.",
+        "legend": []
+      },
+      {
+        "id": "nations",
+        "label": "Nations",
+        "texture": "assets/img/map/overlay_nations.png?v=7",
+        "blurb": "Sovereign powers and their claimed reach.",
+        "legend": [
+          {
+            "color": "#e0719f",
+            "label": "Lefranthan Empire"
+          },
+          {
+            "color": "#5aa87f",
+            "label": "Greymark Horde"
+          },
+          {
+            "color": "#5a86d6",
+            "label": "Greymark Dominion"
+          },
+          {
+            "color": "#9b6fc4",
+            "label": "Snowfals"
+          },
+          {
+            "color": "#d1443a",
+            "label": "Midwel"
+          },
+          {
+            "color": "#e0a13c",
+            "label": "Nog"
+          },
+          {
+            "color": "#e8d24a",
+            "label": "Grug"
+          },
+          {
+            "color": "#c79be0",
+            "label": "Kul"
+          }
+        ]
+      },
+      {
+        "id": "cultures",
+        "label": "Cultures",
+        "texture": "assets/img/map/overlay_cultures.png?v=7",
+        "blurb": "The living peoples and their spheres of custom.",
+        "legend": [
+          {
+            "color": "#e0c24a",
+            "label": "Snowfallian"
+          },
+          {
+            "color": "#c94f42",
+            "label": "Horde"
+          },
+          {
+            "color": "#d98a45",
+            "label": "Bil"
+          },
+          {
+            "color": "#4a63b8",
+            "label": "Thelelthan"
+          },
+          {
+            "color": "#8f62c9",
+            "label": "Lotherkald"
+          },
+          {
+            "color": "#66c7d8",
+            "label": "Khuld"
+          },
+          {
+            "color": "#8fbf55",
+            "label": "Dominion"
+          },
+          {
+            "color": "#4f83d1",
+            "label": "Kul"
+          }
+        ]
+      },
+      {
+        "id": "religions",
+        "label": "Religions",
+        "texture": "assets/img/map/overlay_religions.png?v=7",
+        "blurb": "Faiths and the reach of their devotion.",
+        "legend": [
+          {
+            "color": "#3fbfb2",
+            "label": "Esirianfan Church"
+          },
+          {
+            "color": "#e0c24a",
+            "label": "Ancestor Worship"
+          },
+          {
+            "color": "#7ec3de",
+            "label": "Snowfals Spirits"
+          },
+          {
+            "color": "#5470d6",
+            "label": "The Word of Clayard"
+          },
+          {
+            "color": "#d873a8",
+            "label": "Thelelthan Spirits"
+          },
+          {
+            "color": "#c94f42",
+            "label": "Gho-Ludh Church"
+          },
+          {
+            "color": "#3a3a45",
+            "label": "Vrarudism"
+          },
+          {
+            "color": "#5aa86e",
+            "label": "Naval Tradition"
+          },
+          {
+            "color": "#d98a45",
+            "label": "Mountain Gods"
+          },
+          {
+            "color": "#8f62c9",
+            "label": "Thardor Heresy"
+          },
+          {
+            "color": "#8f959c",
+            "label": "Godless or mixed"
+          }
+        ]
+      }
+    ],
+    "markers": [
+      {
+        "id": "faldeholl",
+        "name": "Faldeholl",
+        "u": 0.2788,
+        "v": 0.1616,
+        "type": "capital",
+        "nation": "snowfals"
+      },
+      {
+        "id": "heartmouth",
+        "name": "Heartmouth",
+        "u": 0.2538,
+        "v": 0.1445,
+        "type": "city",
+        "nation": "snowfals"
+      },
+      {
+        "id": "ynatheasha",
+        "name": "Ynatheasha",
+        "u": 0.314,
+        "v": 0.1986,
+        "type": "town",
+        "nation": "snowfals"
+      },
+      {
+        "id": "oakgulf",
+        "name": "Oakgulf",
+        "u": 0.2561,
+        "v": 0.247,
+        "type": "town",
+        "nation": "snowfals"
+      },
+      {
+        "id": "westwatch",
+        "name": "Westwatch",
+        "u": 0.1716,
+        "v": 0.1003,
+        "type": "town",
+        "nation": "snowfals"
+      },
+      {
+        "id": "wildholl",
+        "name": "Wildholl",
+        "u": 0.1606,
+        "v": 0.1426,
+        "type": "village",
+        "nation": "snowfals"
+      },
+      {
+        "id": "earthspell",
+        "name": "Earthspell",
+        "u": 0.1924,
+        "v": 0.1491,
+        "type": "village",
+        "nation": "snowfals"
+      },
+      {
+        "id": "mosspell",
+        "name": "Mosspell",
+        "u": 0.1997,
+        "v": 0.1628,
+        "type": "village",
+        "nation": "snowfals"
+      },
+      {
+        "id": "dirtstrand",
+        "name": "Dirtstrand",
+        "u": 0.1905,
+        "v": 0.0495,
+        "type": "village",
+        "nation": "snowfals"
+      },
+      {
+        "id": "shiverpeak",
+        "name": "Shiverpeak",
+        "u": 0.313,
+        "v": 0.0146,
+        "type": "landmark",
+        "nation": "snowfals"
+      },
+      {
+        "id": "tower-of-clavard",
+        "name": "Tower of Clavard",
+        "u": 0.2446,
+        "v": 0.1146,
+        "type": "landmark",
+        "nation": "snowfals"
+      },
+      {
+        "id": "cadeholl",
+        "name": "Cadeholl",
+        "u": 0.1535,
+        "v": 0.2557,
+        "type": "capital",
+        "nation": "midwel"
+      },
+      {
+        "id": "horesthold",
+        "name": "Horesthold",
+        "u": 0.0964,
+        "v": 0.2907,
+        "type": "town",
+        "nation": "midwel"
+      },
+      {
+        "id": "feywalken",
+        "name": "Feywalken",
+        "u": 0.2119,
+        "v": 0.2734,
+        "type": "village",
+        "nation": "midwel"
+      },
+      {
+        "id": "dawnband",
+        "name": "Dawnband",
+        "u": 0.2397,
+        "v": 0.2744,
+        "type": "village",
+        "nation": "midwel"
+      },
+      {
+        "id": "diervaq",
+        "name": "Diervaq",
+        "u": 0.2526,
+        "v": 0.3243,
+        "type": "village",
+        "nation": "midwel"
+      },
+      {
+        "id": "pondton",
+        "name": "Pondton",
+        "u": 0.0752,
+        "v": 0.3672,
+        "type": "village",
+        "nation": "midwel"
+      },
+      {
+        "id": "anhold",
+        "name": "Anhold",
+        "u": 0.0305,
+        "v": 0.3786,
+        "type": "town",
+        "nation": "midwel"
+      },
+      {
+        "id": "yelona",
+        "name": "Yelona",
+        "u": 0.6013,
+        "v": 0.3232,
+        "type": "capital",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "mytheas",
+        "name": "Mytheas",
+        "u": 0.4075,
+        "v": 0.2809,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "thyenathesi",
+        "name": "Thyenathesi",
+        "u": 0.3643,
+        "v": 0.1904,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "cymaranthyr",
+        "name": "Cymaranthyr",
+        "u": 0.4595,
+        "v": 0.1644,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "enorofena",
+        "name": "Enorofena",
+        "u": 0.5366,
+        "v": 0.2858,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "adrananill",
+        "name": "Adrananill",
+        "u": 0.6587,
+        "v": 0.2939,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "kynead-shora",
+        "name": "Kynead Shora",
+        "u": 0.3081,
+        "v": 0.3493,
+        "type": "town",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "azirukthazi",
+        "name": "Azirukthazi",
+        "u": 0.5049,
+        "v": 0.4756,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "zhiazal",
+        "name": "Zhiazal",
+        "u": 0.7561,
+        "v": 0.4508,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "szeqashir",
+        "name": "Szeqashir",
+        "u": 0.7598,
+        "v": 0.5732,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "nunulgathan",
+        "name": "Nunulgathan",
+        "u": 0.7119,
+        "v": 0.5407,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "kracavuth",
+        "name": "Kracavuth",
+        "u": 0.8603,
+        "v": 0.6504,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "khrakleth",
+        "name": "Khrakleth",
+        "u": 0.7646,
+        "v": 0.7148,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "drogga",
+        "name": "Drogga",
+        "u": 0.792,
+        "v": 0.7318,
+        "type": "town",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "shree",
+        "name": "Shree",
+        "u": 0.9312,
+        "v": 0.7695,
+        "type": "city",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "kiruktharbhs-watch",
+        "name": "Kiruktharbh's Watch",
+        "u": 0.6533,
+        "v": 0.4258,
+        "type": "landmark",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "shazilgaths-gate",
+        "name": "Shazilgath's Gate",
+        "u": 0.3525,
+        "v": 0.4193,
+        "type": "landmark",
+        "nation": "lefrantha"
+      },
+      {
+        "id": "givzie",
+        "name": "Givzie",
+        "u": 0.3203,
+        "v": 0.6253,
+        "type": "capital",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "celhob",
+        "name": "Celhob",
+        "u": 0.1641,
+        "v": 0.4557,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "feltia",
+        "name": "Feltia",
+        "u": 0.3408,
+        "v": 0.4827,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "oadowfalls",
+        "name": "Oadowfalls",
+        "u": 0.0696,
+        "v": 0.4658,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "gobligz",
+        "name": "Gobligz",
+        "u": 0.0989,
+        "v": 0.5732,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "vreagab",
+        "name": "Vreagab",
+        "u": 0.1843,
+        "v": 0.6165,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "brybgard",
+        "name": "Brybgard",
+        "u": 0.127,
+        "v": 0.6432,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "tasinx",
+        "name": "Tasinx",
+        "u": 0.291,
+        "v": 0.7327,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "grazzuz",
+        "name": "Grazzuz",
+        "u": 0.2144,
+        "v": 0.7923,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "odzal",
+        "name": "Odzal",
+        "u": 0.326,
+        "v": 0.7562,
+        "type": "town",
+        "nation": "greymark_horde"
+      },
+      {
+        "id": "en",
+        "name": "En",
+        "u": 0.1651,
+        "v": 0.7073,
+        "type": "capital",
+        "nation": "kul"
+      },
+      {
+        "id": "fruict",
+        "name": "Fruict",
+        "u": 0.1542,
+        "v": 0.6911,
+        "type": "village",
+        "nation": "kul"
+      },
+      {
+        "id": "ulbligz",
+        "name": "Ulbligz",
+        "u": 0.1899,
+        "v": 0.7083,
+        "type": "town",
+        "nation": "kul"
+      },
+      {
+        "id": "phax",
+        "name": "Phax",
+        "u": 0.511,
+        "v": 0.6286,
+        "type": "capital",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "pax",
+        "name": "Pax",
+        "u": 0.5566,
+        "v": 0.6302,
+        "type": "town",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "bresheaf",
+        "name": "Bresheaf",
+        "u": 0.501,
+        "v": 0.58,
+        "type": "landmark",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "lasnex",
+        "name": "Lasnex",
+        "u": 0.6445,
+        "v": 0.6361,
+        "type": "town",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "laili",
+        "name": "Laili",
+        "u": 0.6611,
+        "v": 0.57,
+        "type": "town",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "chalkvish",
+        "name": "Chalkvish",
+        "u": 0.605,
+        "v": 0.6644,
+        "type": "town",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "stroi",
+        "name": "Stroi",
+        "u": 0.4269,
+        "v": 0.6449,
+        "type": "village",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "uelsirtstead",
+        "name": "Uelsirtstead",
+        "u": 0.4502,
+        "v": 0.6709,
+        "type": "town",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "gazd",
+        "name": "Gazd",
+        "u": 0.261,
+        "v": 0.8379,
+        "type": "capital",
+        "nation": "grug"
+      },
+      {
+        "id": "khorbric",
+        "name": "Khorbric",
+        "u": 0.3501,
+        "v": 0.7891,
+        "type": "town",
+        "nation": "grug"
+      },
+      {
+        "id": "zun-rug",
+        "name": "Zun-Rug",
+        "u": 0.3907,
+        "v": 0.8205,
+        "type": "town",
+        "nation": "grug"
+      },
+      {
+        "id": "dhogniz",
+        "name": "Dhogniz",
+        "u": 0.258,
+        "v": 0.9338,
+        "type": "village",
+        "nation": "grug"
+      },
+      {
+        "id": "gha",
+        "name": "Gha",
+        "u": 0.5884,
+        "v": 0.8281,
+        "type": "capital",
+        "nation": "nog"
+      },
+      {
+        "id": "kragmukh",
+        "name": "Kragmukh",
+        "u": 0.42,
+        "v": 0.828,
+        "type": "city",
+        "nation": "nog"
+      },
+      {
+        "id": "bulgzo",
+        "name": "Bulgzo",
+        "u": 0.492,
+        "v": 0.823,
+        "type": "town",
+        "nation": "nog"
+      },
+      {
+        "id": "zrad",
+        "name": "Zrad",
+        "u": 0.6265,
+        "v": 0.9063,
+        "type": "town",
+        "nation": "nog"
+      },
+      {
+        "id": "dirdkog",
+        "name": "Dirdkog",
+        "u": 0.7222,
+        "v": 0.627,
+        "type": "town",
+        "nation": "nog"
+      },
+      {
+        "id": "gneabtong",
+        "name": "Gneabtong",
+        "u": 0.6421,
+        "v": 0.6986,
+        "type": "town",
+        "nation": "nog"
+      },
+      {
+        "id": "blix",
+        "name": "Blix",
+        "u": 0.6763,
+        "v": 0.7018,
+        "type": "town",
+        "nation": "nog"
+      },
+      {
+        "id": "joimtoilm",
+        "name": "Joimtoilm",
+        "u": 0.5342,
+        "v": 0.7148,
+        "type": "town",
+        "nation": "nog"
+      },
+      {
+        "id": "lorgrurd",
+        "name": "Lorgrurd",
+        "u": 0.6455,
+        "v": 0.7515,
+        "type": "town",
+        "nation": "nog"
+      }
+    ]
+  }
 };

@@ -25,6 +25,7 @@
                 <a href="#/timeline" data-nav="timeline">Timeline</a>
                 <a href="#/chronicle" data-nav="chronicle">Chronicle</a>
                 <a href="#/tales" data-nav="tales">Theodore's Tales</a>
+                <a href="#/map" data-nav="map">World Map</a>
             </div>
         </nav>
     </header>
@@ -100,11 +101,62 @@
             </article>
         </section>
 
+        <!-- View: the 3D World Map -->
+        <section id="view-map" class="view view-map" hidden aria-labelledby="map-title">
+            <div class="map-stage" id="map-stage">
+                <canvas id="map-canvas" aria-label="Interactive 3D map of Bellos"></canvas>
+
+                <div class="map-loading" id="map-loading" aria-hidden="true">
+                    <span class="map-compass"></span>
+                    <span class="map-loading-text">Charting Bellos&hellip;</span>
+                </div>
+
+                <!-- Title overlay -->
+                <div class="map-titlebar">
+                    <p class="kicker">Atlas of the World</p>
+                    <h1 class="view-title" id="map-title">The World Map</h1>
+                </div>
+
+                <!-- Filter / layer panel -->
+                <aside class="map-panel" id="map-panel" aria-label="Map layers and legend">
+                    <button class="map-panel-toggle" id="map-panel-toggle" type="button" aria-expanded="true" aria-controls="map-panel-body">
+                        <span class="map-panel-toggle-label">Layers</span>
+                        <span class="map-panel-chevron" aria-hidden="true"></span>
+                    </button>
+                    <div class="map-panel-body" id="map-panel-body">
+                        <div class="map-filters" id="map-filters" role="tablist" aria-label="Map overlay"></div>
+                        <div class="map-legend" id="map-legend" aria-live="polite"></div>
+                        <div class="map-node-toggles" id="map-node-toggles" aria-label="Place pins"></div>
+                        <label class="map-toggle-row">
+                            <input type="checkbox" id="map-labels-toggle" checked>
+                            <span>Place labels</span>
+                        </label>
+                        <label class="map-toggle-row">
+                            <input type="checkbox" id="map-relief-toggle" checked>
+                            <span>3D relief</span>
+                        </label>
+                    </div>
+                </aside>
+
+                <!-- Controls hint / reset -->
+                <div class="map-controls">
+                    <button class="map-ctl" id="map-reset" type="button" title="Reset view">Reset view</button>
+                    <p class="map-hint">Drag to orbit &middot; scroll to zoom &middot; right-drag to pan</p>
+                </div>
+
+                <!-- Selected node detail -->
+                <div class="map-detail" id="map-detail" hidden></div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer">Bellos - The Schism Campaign</footer>
 
+    <script src="assets/vendor/three/three.min.js"></script>
+    <script src="assets/vendor/three/OrbitControls.js"></script>
     <script src="data/lore.js"></script>
+    <script src="js/worldmap.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
