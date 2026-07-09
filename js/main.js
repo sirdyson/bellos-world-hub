@@ -379,6 +379,8 @@
       labelsToggle: document.getElementById('map-labels-toggle'),
       reliefToggle: document.getElementById('map-relief-toggle'),
       reset: document.getElementById('map-reset'),
+      zoomIn: document.getElementById('map-zoom-in'),
+      zoomOut: document.getElementById('map-zoom-out'),
       loading: document.getElementById('map-loading')
     });
     mapReady = true;

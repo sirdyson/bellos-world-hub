@@ -27,6 +27,7 @@
   let MAP_H = 7.5;
   const RELIEF = 0.42;                // displacement height of the tallest peak
   const OVERLAY_LIFT = 0.02;          // keeps overlays clear of the terrain skin
+  const OVERLAY_OPACITY = 0.85;       // tint strength; base art stays full-bright beneath
   const SEG_X = 260, SEG_Y = 195;     // terrain tessellation
 
   const TYPE_STYLE = {
@@ -49,6 +50,11 @@
 
   const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
   const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+
+  /* pins rest slightly recessed and grow past full size on hover */
+  const PIN_REST = 0.82, PIN_HOVER = 1.05;
+  const HALO_REST = 0.16, HALO_HOVER = 0.4;
+  const HOVER_MS = 180;
 
   const S = {
     ready: false, running: false, raf: 0,
@@ -203,6 +209,12 @@
 
   function buildMarkers() {
     const stage = S.dom.stage;
+    /* one shared hover tooltip: type + nation, small-caps over the pin */
+    const tip = document.createElement('div');
+    tip.className = 'map-tooltip';
+    tip.setAttribute('aria-hidden', 'true');
+    stage.appendChild(tip);
+    S.dom.tooltip = tip;
     (S.data.markers || []).forEach((m) => {
       const style = TYPE_STYLE[m.type] || TYPE_STYLE.town;
       const color = new THREE.Color(NATION_COLOR[m.nation] || '#e8cd8a');
@@ -274,7 +286,8 @@
       S.nodeGroup.add(group);
       const rec = { data: m, group, head, halo, stem, label, color, pick,
                     anchor: new THREE.Vector3(surf.x, surf.y + stemH, surf.z),
-                    baseR: style.r, stemH };
+                    baseR: style.r, stemH, hoverCur: 0, hoverTarget: 0 };
+      applyHover(rec, 0);
       S.markers.push(rec);
     });
     applyTypeVisibility();
@@ -321,10 +334,9 @@
     }
     S.activeOv = fadeIn;
 
-    if (immediate || REDUCED_MOTION) {
+    if (immediate || REDUCED_MOTION || !S.running) {
       if (fadeOut && fadeOut !== fadeIn) { fadeOut.material.opacity = 0; fadeOut.visible = false; }
-      if (fadeIn) fadeIn.material.opacity = 1;
-      S.terrain.material.color.setScalar(fadeIn ? 0.62 : 1);
+      if (fadeIn) fadeIn.material.opacity = OVERLAY_OPACITY;
       S.xfade = null;
       renderOnce();
       return;
@@ -332,8 +344,6 @@
     S.xfade = {
       out: fadeOut === fadeIn ? null : fadeOut,
       in: fadeIn,
-      dimFrom: S.terrain.material.color.r,
-      dimTo: fadeIn ? 0.62 : 1,          // recede the base art under a tint
       t: 0, dur: 620
     };
     ensureRunning();
@@ -354,11 +364,42 @@
 
   function recFor(m) { return S.markers.find((r) => r.data === m) || null; }
 
+  /* t 0..1 blends the pin between its recessed rest and enlarged hover state */
+  function applyHover(rec, t) {
+    rec.hoverCur = t;
+    const s = PIN_REST + (PIN_HOVER - PIN_REST) * t;
+    rec.head.scale.setScalar(s);
+    rec.halo.scale.setScalar(s);
+    rec.halo.material.opacity = HALO_REST + (HALO_HOVER - HALO_REST) * t;
+  }
+
   function setHover(rec, on) {
-    const k = on ? 1.55 : 1;
-    rec.head.scale.setScalar(k);
-    rec.halo.material.opacity = on ? 0.34 : 0.16;
+    rec.hoverTarget = on ? 1 : 0;
+    if (REDUCED_MOTION) applyHover(rec, rec.hoverTarget);
     rec.label.classList.toggle('is-hover', on);
+    const tip = S.dom.tooltip;
+    if (tip) {
+      if (on) {
+        const nation = S.data.__nations && S.data.__nations[rec.data.nation];
+        tip.textContent = (rec.data.type || 'settlement') +
+          (nation ? ' · ' + nation.name : '');
+        tip.classList.add('is-on');
+      } else {
+        tip.classList.remove('is-on');
+      }
+    }
+  }
+
+  function tickHover(dt) {
+    const step = dt / HOVER_MS;
+    for (let i = 0; i < S.markers.length; i++) {
+      const rec = S.markers[i];
+      if (rec.hoverCur === rec.hoverTarget) continue;
+      const t = rec.hoverCur < rec.hoverTarget
+        ? Math.min(rec.hoverTarget, rec.hoverCur + step)
+        : Math.max(rec.hoverTarget, rec.hoverCur - step);
+      applyHover(rec, t);
+    }
   }
 
   function selectMarker(rec) {
@@ -427,9 +468,17 @@
       } else if (!el.hidden) {
         el.hidden = true;
       }
+      /* the tooltip floats just above the hovered pin's label */
+      if (rec === S.hovered && S.dom.tooltip) {
+        S.dom.tooltip.style.transform =
+          'translate(-50%,-100%) translate(' + x.toFixed(1) + 'px,' + (y - 30).toFixed(1) + 'px)';
+      }
     }
   }
-  function hideAllLabels() { S.markers.forEach((r) => { r.label.hidden = true; }); }
+  function hideAllLabels() {
+    S.markers.forEach((r) => { r.label.hidden = true; });
+    if (S.dom.tooltip) S.dom.tooltip.classList.remove('is-on');
+  }
 
   /* -------------------------------------------------------------- animation */
   function tickIntro(dt) {
@@ -448,9 +497,8 @@
     const x = S.xfade;
     x.t = Math.min(1, x.t + dt / x.dur);
     const e = easeInOut(x.t);
-    if (x.in) x.in.material.opacity = e;
-    if (x.out) x.out.material.opacity = 1 - e;
-    S.terrain.material.color.setScalar(x.dimFrom + (x.dimTo - x.dimFrom) * e);
+    if (x.in) x.in.material.opacity = e * OVERLAY_OPACITY;
+    if (x.out) x.out.material.opacity = (1 - e) * OVERLAY_OPACITY;
     if (x.t >= 1) {
       if (x.out) x.out.visible = false;
       S.xfade = null;
@@ -473,7 +521,7 @@
   function loop(now) {
     if (!S.running) return;
     const dt = Math.min(48, now - _last || 16); _last = now;
-    tickIntro(dt); tickXfade(dt); tickRelief(dt);
+    tickIntro(dt); tickXfade(dt); tickRelief(dt); tickHover(dt);
     S.controls.update();
     updatePick();
     S.renderer.render(S.scene, S.camera);
@@ -525,6 +573,11 @@
       const open = S.dom.panel.classList.toggle('is-collapsed');
       S.dom.panelToggle.setAttribute('aria-expanded', String(!open));
     });
+    /* phones start with the layers panel folded so the map stays visible */
+    if (window.innerWidth <= 720) {
+      S.dom.panel.classList.add('is-collapsed');
+      S.dom.panelToggle.setAttribute('aria-expanded', 'false');
+    }
     S.dom.labelsToggle.addEventListener('change', (e) => {
       S.labelsOn = e.target.checked;
       if (!S.labelsOn) hideAllLabels(); else renderOnce();
@@ -536,6 +589,12 @@
       ensureRunning();
     });
     S.dom.reset.addEventListener('click', resetView);
+    if (S.dom.zoomIn) S.dom.zoomIn.addEventListener('click', () => zoomBy(0.72));
+    if (S.dom.zoomOut) S.dom.zoomOut.addEventListener('click', () => zoomBy(1.38));
+    /* Escape dismisses the detail card wherever focus sits */
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && S.running && S.selected) clearSelection();
+    });
     S.dom.canvas.addEventListener('pointermove', onPointerMove);
     S.dom.canvas.addEventListener('pointerdown', () => { S.dom.canvas.style.cursor = 'grabbing'; });
     S.dom.canvas.addEventListener('pointerup', () => { S.dom.canvas.style.cursor = S.hovered ? 'pointer' : 'grab'; });
@@ -571,6 +630,17 @@
     else clearSelection();
   }
 
+  /* Dolly the camera toward/away from the orbit target (zoom chrome). */
+  function zoomBy(factor) {
+    const v = S.camera.position.clone().sub(S.controls.target);
+    const len = Math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z) || 1;
+    const d = Math.min(Math.max(len * factor, S.controls.minDistance), S.controls.maxDistance);
+    v.multiplyScalar(d / len);
+    S.camera.position.copy(S.controls.target).add(v);
+    S.controls.update();
+    renderOnce();
+  }
+
   function resetView() {
     clearSelection();
     if (REDUCED_MOTION) { S.camera.position.copy(S.homeCam); S.controls.target.set(0, 0, 0); return; }
@@ -594,7 +664,8 @@
       filters: opts.filters, legend: opts.legend, detail: opts.detail,
       nodeToggles: opts.nodeToggles,
       labelsToggle: opts.labelsToggle, reliefToggle: opts.reliefToggle,
-      reset: opts.reset, loading: opts.loading
+      reset: opts.reset, zoomIn: opts.zoomIn, zoomOut: opts.zoomOut,
+      loading: opts.loading
     };
     buildScene();
     buildUI();

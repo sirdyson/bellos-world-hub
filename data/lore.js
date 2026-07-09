@@ -728,7 +728,7 @@ window.BELLOS_LORE = {
           },
           {
             "color": "#8f959c",
-            "label": "Godless or mixed"
+            "label": "Godless/Pluralist"
           }
         ]
       }
@@ -811,12 +811,12 @@ window.BELLOS_LORE = {
         "name": "Shiverpeak",
         "u": 0.313,
         "v": 0.0146,
-        "type": "landmark",
+        "type": "village",
         "nation": "snowfals"
       },
       {
-        "id": "tower-of-clavard",
-        "name": "Tower of Clavard",
+        "id": "tower-of-clayard",
+        "name": "Tower of Clayard",
         "u": 0.2446,
         "v": 0.1146,
         "type": "landmark",
@@ -899,7 +899,7 @@ window.BELLOS_LORE = {
         "name": "Thyenathesi",
         "u": 0.3643,
         "v": 0.1904,
-        "type": "city",
+        "type": "town",
         "nation": "lefrantha"
       },
       {
@@ -915,7 +915,7 @@ window.BELLOS_LORE = {
         "name": "Enorofena",
         "u": 0.5366,
         "v": 0.2858,
-        "type": "city",
+        "type": "town",
         "nation": "lefrantha"
       },
       {
@@ -931,7 +931,7 @@ window.BELLOS_LORE = {
         "name": "Kynead Shora",
         "u": 0.3081,
         "v": 0.3493,
-        "type": "town",
+        "type": "village",
         "nation": "lefrantha"
       },
       {
@@ -939,7 +939,7 @@ window.BELLOS_LORE = {
         "name": "Azirukthazi",
         "u": 0.5049,
         "v": 0.4756,
-        "type": "city",
+        "type": "town",
         "nation": "lefrantha"
       },
       {
@@ -955,7 +955,7 @@ window.BELLOS_LORE = {
         "name": "Szeqashir",
         "u": 0.7598,
         "v": 0.5732,
-        "type": "city",
+        "type": "town",
         "nation": "lefrantha"
       },
       {
@@ -963,7 +963,7 @@ window.BELLOS_LORE = {
         "name": "Nunulgathan",
         "u": 0.7119,
         "v": 0.5407,
-        "type": "city",
+        "type": "town",
         "nation": "lefrantha"
       },
       {
@@ -971,7 +971,7 @@ window.BELLOS_LORE = {
         "name": "Kracavuth",
         "u": 0.8603,
         "v": 0.6504,
-        "type": "city",
+        "type": "town",
         "nation": "lefrantha"
       },
       {
@@ -979,14 +979,6 @@ window.BELLOS_LORE = {
         "name": "Khrakleth",
         "u": 0.7646,
         "v": 0.7148,
-        "type": "city",
-        "nation": "lefrantha"
-      },
-      {
-        "id": "drogga",
-        "name": "Drogga",
-        "u": 0.792,
-        "v": 0.7318,
         "type": "town",
         "nation": "lefrantha"
       },
@@ -995,7 +987,7 @@ window.BELLOS_LORE = {
         "name": "Shree",
         "u": 0.9312,
         "v": 0.7695,
-        "type": "city",
+        "type": "town",
         "nation": "lefrantha"
       },
       {
@@ -1027,7 +1019,7 @@ window.BELLOS_LORE = {
         "name": "Celhob",
         "u": 0.1641,
         "v": 0.4557,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1035,7 +1027,7 @@ window.BELLOS_LORE = {
         "name": "Feltia",
         "u": 0.3408,
         "v": 0.4827,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1043,7 +1035,7 @@ window.BELLOS_LORE = {
         "name": "Oadowfalls",
         "u": 0.0696,
         "v": 0.4658,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1051,7 +1043,7 @@ window.BELLOS_LORE = {
         "name": "Gobligz",
         "u": 0.0989,
         "v": 0.5732,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1059,7 +1051,7 @@ window.BELLOS_LORE = {
         "name": "Vreagab",
         "u": 0.1843,
         "v": 0.6165,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1067,7 +1059,7 @@ window.BELLOS_LORE = {
         "name": "Brybgard",
         "u": 0.127,
         "v": 0.6432,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1083,7 +1075,7 @@ window.BELLOS_LORE = {
         "name": "Grazzuz",
         "u": 0.2144,
         "v": 0.7923,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1091,7 +1083,7 @@ window.BELLOS_LORE = {
         "name": "Odzal",
         "u": 0.326,
         "v": 0.7562,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_horde"
       },
       {
@@ -1131,7 +1123,7 @@ window.BELLOS_LORE = {
         "name": "Pax",
         "u": 0.5566,
         "v": 0.6302,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_dominion"
       },
       {
@@ -1139,7 +1131,7 @@ window.BELLOS_LORE = {
         "name": "Bresheaf",
         "u": 0.501,
         "v": 0.58,
-        "type": "landmark",
+        "type": "village",
         "nation": "greymark_dominion"
       },
       {
@@ -1147,7 +1139,7 @@ window.BELLOS_LORE = {
         "name": "Lasnex",
         "u": 0.6445,
         "v": 0.6361,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_dominion"
       },
       {
@@ -1155,7 +1147,15 @@ window.BELLOS_LORE = {
         "name": "Laili",
         "u": 0.6611,
         "v": 0.57,
-        "type": "town",
+        "type": "village",
+        "nation": "greymark_dominion"
+      },
+      {
+        "id": "joimtoilm",
+        "name": "Joimtoilm",
+        "u": 0.5342,
+        "v": 0.7148,
+        "type": "village",
         "nation": "greymark_dominion"
       },
       {
@@ -1163,7 +1163,7 @@ window.BELLOS_LORE = {
         "name": "Chalkvish",
         "u": 0.605,
         "v": 0.6644,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_dominion"
       },
       {
@@ -1175,11 +1175,11 @@ window.BELLOS_LORE = {
         "nation": "greymark_dominion"
       },
       {
-        "id": "uelsirtstead",
-        "name": "Uelsirtstead",
+        "id": "felsirtstead",
+        "name": "Felsirtstead",
         "u": 0.4502,
         "v": 0.6709,
-        "type": "town",
+        "type": "village",
         "nation": "greymark_dominion"
       },
       {
@@ -1203,7 +1203,7 @@ window.BELLOS_LORE = {
         "name": "Zun-Rug",
         "u": 0.3907,
         "v": 0.8205,
-        "type": "town",
+        "type": "village",
         "nation": "grug"
       },
       {
@@ -1227,7 +1227,7 @@ window.BELLOS_LORE = {
         "name": "Kragmukh",
         "u": 0.42,
         "v": 0.828,
-        "type": "city",
+        "type": "town",
         "nation": "nog"
       },
       {
@@ -1243,7 +1243,7 @@ window.BELLOS_LORE = {
         "name": "Zrad",
         "u": 0.6265,
         "v": 0.9063,
-        "type": "town",
+        "type": "village",
         "nation": "nog"
       },
       {
@@ -1271,18 +1271,18 @@ window.BELLOS_LORE = {
         "nation": "nog"
       },
       {
-        "id": "joimtoilm",
-        "name": "Joimtoilm",
-        "u": 0.5342,
-        "v": 0.7148,
-        "type": "town",
-        "nation": "nog"
-      },
-      {
         "id": "lorgrurd",
         "name": "Lorgrurd",
         "u": 0.6455,
         "v": 0.7515,
+        "type": "town",
+        "nation": "nog"
+      },
+      {
+        "id": "drogga",
+        "name": "Drogga",
+        "u": 0.792,
+        "v": 0.7318,
         "type": "town",
         "nation": "nog"
       }
