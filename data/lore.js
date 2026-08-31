@@ -654,6 +654,30 @@ window.BELLOS_LORE = {
       "discoveredBy": "Mors Harald-Otto of House Black",
       "nation": "greymark_horde"
     },
+    {
+      "session": 10,
+      "date": "Day 6",
+      "title": "The Great Rotation",
+      "summary": "Many bets are made, Grinzak sends a letter home, and the rotation begins - with Lucien, Theodore, and Ulrich all competing for their clans with hundreds of other racers.",
+      "discoveredBy": "The Party",
+      "nation": "greymark_horde"
+    },
+    {
+      "session": 10,
+      "date": "Day 6",
+      "title": "The Gnawing Court",
+      "summary": "Tibbin whisks Grinzak and Mors away to the Feywild amidst a succession crisis, following the death of the Rat King. Grinzak, Kingslayer, wins various trials against The Vinegar Prince and claims his Feywild council. After tying the rope between planes together, Grinzak is proclaimed The Lord of The Gnawing Court and his first decree is a progrom of gnomes. Mors has his name exchanged to Pettifew and he finds that he wasn't struck by lightning as a child - the lightning chose him.",
+      "discoveredBy": "Grinzak, The Lord of the Gnawing Court & Pettifew Harald-Otto of House Black",
+      "nation": ""
+    },
+        {
+      "session": 10,
+      "date": "Day 34",
+      "title": "The Birth of The Khanate",
+      "summary": "Ulrich, against all odds, wins the Great Rotation on behalf of Clan Kashtamar. At the Great Shrine, he touches the ancestor stone, where he regains his strength - and becomes formally a member of Clan Kashtamar. At the Shrine, he kneels before the flame and is congratulated by Torvahn Jarakhi. Torvahn commands Ulrich to execute an orcish spy from the Dominion in front of the crowd. He fulfils his command, and is raised as Champion of the Horde. Torvahn demands a mandate to rule after exposing the spy; Ulrich whips up support from the clans, and unanimously, Torvahn's mandate is given - hailing him Torvahn Jarakhi, the Iron Khan, of the Greymark Khanate.",
+      "discoveredBy": "Ulrich Kashtamar",
+      "nation": "greymark_horde"
+    },
   ],
   "worldMap": {
     "notes": "Node coords are normalised [u,v] at the CENTRE OF THE PLACE ICON on the map (the drawing above the name): u=x/width (0 = west edge), v=y/height (0 = north edge). To add a place: copy a marker and set id (unique slug), name, u, v, type (capital|city|town|village|ruin|landmark), nation (links to its nation page and tints the pin; omit for none), and an optional desc - a sentence or two shown in the detail card when the node is clicked.",
